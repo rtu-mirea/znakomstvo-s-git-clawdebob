@@ -19,9 +19,10 @@ func Pic(dx, dy int) [][]uint8 {
         }
     }
     fmt.Println(len(a))
+
     return a;
 }
 
 func main() {
-	pic.Show(Pic)
+    pic.Show(Pic)
 }
