@@ -12,7 +12,7 @@ class App extends Component {
     }
 
     parseHandler() {
-        const reg = /(https?:\/\/\w+\.\w+\/?)/gmi;
+        const reg = /(https?:\/\/(?:www\.)?\w+\.\w+\/?[\w\/\-_#]*)/gmi;
         const input = document.getElementById('text-area');
         const text = input.value;
         const parsedText = text.replace(reg, '<a href=" $1 ">$1</a>');
